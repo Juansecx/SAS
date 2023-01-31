@@ -1,0 +1,8 @@
+.escalada {
+  transform: scale(2, 3);
+}
+
+h1 {
+  color: blue;
+  transform: rotate(22deg);
+}/*# sourceMappingURL=mixins.css.map */
