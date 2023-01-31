@@ -1,0 +1,45 @@
+$tamaño_h1: 2em;
+$tamaño_h2: 1.65em;
+$tamaño_h3: 1.55em;
+$tamaño_h4: 1.45em;
+$tamaño_h5: 1.35em;
+$tamaño_h6: 1em;
+$display_defecto: inline-block;
+
+@for $index from 1 to 7 {
+  h#{$index} {
+    @if $index==1 {
+      font-size: $tamaño_h1;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    } @else if $index==2 {
+      font-size: $tamaño_h2;
+    } @else if $index==3 {
+      font-size: $tamaño_h3;
+    } @else if $index==4 {
+      font-size: $tamaño_h4;
+    } @else if $index==5 {
+      font-size: $tamaño_h5;
+    } @else if $index==6 {
+      font-size: $tamaño_h6;
+    }
+  }
+}
+
+.sans-serif {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  display: $display_defecto;
+  color:grey;
+}
+
+$lista_colores: red, green, blue, violet;
+
+@for $index from 1 to 5 {
+  .colores p:nth-child(#{$index}) {
+    color: nth($lista_colores, $index);
+  }
+}
+

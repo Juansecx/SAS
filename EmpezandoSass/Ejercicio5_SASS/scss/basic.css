@@ -1,0 +1,50 @@
+h1 {
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.65em;
+}
+
+h3 {
+  font-size: 1.55em;
+}
+
+h4 {
+  font-size: 1.45em;
+}
+
+h5 {
+  font-size: 1.35em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  display: inline-block;
+  color: grey;
+}
+
+.colores p:nth-child(1) {
+  color: red;
+}
+
+.colores p:nth-child(2) {
+  color: green;
+}
+
+.colores p:nth-child(3) {
+  color: blue;
+}
+
+.colores p:nth-child(4) {
+  color: violet;
+}/*# sourceMappingURL=basic.css.map */

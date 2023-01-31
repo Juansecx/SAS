@@ -1,0 +1,14 @@
+
+$numero: 1;
+
+@for $index from 1 to 4 {
+
+    .container-#{$index}{
+
+        font-size: #{$numero}em;
+
+    }    
+
+    $numero:$numero*2;
+
+}

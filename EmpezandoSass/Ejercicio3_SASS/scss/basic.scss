@@ -1,0 +1,15 @@
+
+$index:1;
+
+$lista_porcentaje: '20%','50%','30%';
+
+@while $index < 4 {
+
+    .bloque#{$index} {
+
+        width: nth($lista_porcentaje, $index );
+
+    }
+
+    $index:$index+1;
+}

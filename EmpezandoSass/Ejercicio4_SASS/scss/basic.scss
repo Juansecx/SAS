@@ -1,0 +1,16 @@
+
+$lista_listas:('puma', 'black', 'default'), ('sea-slug', 'blue', 'pointer');
+
+@each $clave, $valor, $clave3 in $lista_listas {
+
+   
+    .#{$clave}-icon {
+
+        background-image: url('/images/#{$clave}.png');
+        border: 2px solid #{$valor};
+        cursor: #{$clave3};
+
+    }
+
+
+}

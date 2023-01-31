@@ -1,0 +1,35 @@
+/*Realiza un fichero SASS donde en base a una variable “textoAumentado” aplique un estilo
+diferente, modificando para ello el tipo de fuente aplicada y el tamaño de letra. Además
+deberá contener una variable “modificaColor” que si está activa deberá modificar también
+el color aplicado al estilo a “rojo” (siendo este también almacenado también en una
+variable).*/
+
+$textoAumentado: true;
+
+$modificaColor: false;
+
+$tipo_fuente_defecto: Arial, Helvetica, sans-serif;
+
+$font_size_defecto: 1em;
+
+$color_defecto: blue;
+
+.texto {
+  @if $textoAumentado and $modificaColor {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+  } @else if $textoAumentado and $modificaColor==false {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: $color_defecto;
+  } @else if $textoAumentado==false and $modificaColor {
+    font-size: $font_size_defecto;
+    font-family: $tipo_fuente_defecto;
+    color: red;
+  } @else {
+    color: $color_defecto;
+    font-size: $font_size_defecto;
+    font-family: $tipo_fuente_defecto;
+  }
+}
